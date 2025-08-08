@@ -7,7 +7,7 @@ const INVITE = {
   venue: 'Jullies Venue',
   mapsLink: '',
   rsvpName: 'Dube Family',
-  rsvpPhone: '+27605023284',
+  rsvpPhone: '+27 71 423 2261',
   dressCode: '“Look sharp — it’s party time!” ✨',
   gallery: [
     'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/pcy/8an/t3w/HBD%201%20Mthabisi%20Dube.PNG',
