@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Birthday Invite — Pink & White</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+  <div class="wrap">
+    <header>
+      <!-- Tag + Dad button -->
+      <div class="header-row">
+        <span class="tag">You're Invited</span>
+        <button id="playDadMessage" class="dad-btn" aria-pressed="false" aria-label="Play message from Dad">
+          ▶ Message from Dad
+        </button>
+      </div>
+
+      <!-- Hidden audio (replace file in /audio) -->
+      <audio id="dadAudio" preload="auto">
+        <source src="audio/dad-message.mp3" type="audio/mpeg">
+      </audio>
+
+      <h1 class="title" id="kidName">Birthday Party</h1>
+      <p class="subtitle" id="turningText">Turning <span id="age">TBD</span> • Let's Celebrate!</p>
+      <div class="date-pill" id="datePill" title="Save the date">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <strong id="dateHuman">Sat, 30 Aug 2025</strong>
+      </div>
+      <div class="countdown" aria-live="polite">
+        <div class="tbox"><div class="num" id="d">--</div><div class="lab">Days</div></div>
+        <div class="tbox"><div class="num" id="h">--</div><div class="lab">Hours</div></div>
+        <div class="tbox"><div class="num" id="m">--</div><div class="lab">Mins</div></div>
+        <div class="tbox"><div class="num" id="s">--</div><div class="lab">Secs</div></div>
+      </div>
+    </header>
+
+    <!-- GALLERY / SLIDER -->
+    <section class="slider" aria-label="Photo slideshow">
+      <div class="slides" id="slides"></div>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+    </section>
+
+    <!-- DETAILS CARD -->
+    <section class="card" aria-labelledby="detailsTitle">
+      <h2 id="detailsTitle" class="sr-only">Event details</h2>
+      <div class="row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <div class="txt"><div class="head">Where</div><div id="venue">TBD Venue</div></div>
+      </div>
+      <div class="row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6h4V2"></path><rect x="6" y="8" width="12" height="14" rx="2"></rect></svg>
+        <div class="txt"><div class="head">When</div><div><span id="whenDate">Sat, 30 Aug 2025</span> • <span id="whenTime">2:00 PM</span></div></div>
+      </div>
+      <div class="row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12H2"></path><path d="m15 5-7 7 7 7"></path></svg>
+        <div class="txt"><div class="head">Dress Code</div><div id="dress">Pink & White ✨</div></div>
+      </div>
+      <div class="row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 6.18 2 2 0 0 1 4.11 4h3a2 2 0 0 1 2 1.72c.12.9.34 1.77.65 2.6a2 2 0 0 1-.45 2.11L8.09 11a16 16 0 0 0 6 6l.58-1.23a2 2 0 0 1 2.11-.45c.83 .31 1.7 .53 2.6 .65A2 2 0 0 1 22 16.92Z"></path></svg>
+        <div class="txt"><div class="head">RSVP</div><div id="rsvpTo">TBD (tap RSVP)</div></div>
+      </div>
+    </section>
+
+    <!-- FLOATING CTA -->
+    <div class="cta">
+      <button class="btn btn-primary" id="btnRsvp">RSVP on WhatsApp</button>
+      <button class="btn btn-ghost" id="btnAddCal">Add to Calendar</button>
+    </div>
+
+    <footer>Made with ♥ in pink & white — see you there!</footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
