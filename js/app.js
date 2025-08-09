@@ -10,11 +10,11 @@ const INVITE = {
   rsvpPhone: '+27 71 423 2261',
   dressCode: '“Look sharp — it’s party time!” ✨',
   gallery: [
-    'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/pcy/8an/t3w/HBD%201%20Mthabisi%20Dube.PNG',
-    'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/nrm/agn/235/HBD%202%20Mthabisi%20Dube.PNG',
-    'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/1qw/p9o/0jn/HBD%203%20Mthabisi%20Dube.PNG',
-    'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/tb5/1dd/gcu/HBD%204%20Mthabisi%20Dube.PNG'
-  ]
+'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/6xw/rh1/kat/Mthabisi%20Dube%20y1-Picsart.jpg',
+'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/5ux/ejd/d08/Mthabisi%20Dube%20y2-Picsart.jpg',
+'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/1qw/p9o/0jn/HBD%203%20Mthabisi%20Dube.PNG',
+'https://af6815798a.imgdist.com/pub/bfra/knkjywkm/pcy/8an/t3w/HBD%201%20Mthabisi%20Dube.PNG'
+]
 };
 
 // --- Init UI ---
